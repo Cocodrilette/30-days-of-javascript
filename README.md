@@ -6,4 +6,4 @@ I will doing one by one, trying to do one per day.
 
 If you want no know more about each project, I will talking about it in my website. [Check it out!](https://underb.gatsbyjs.io/)
 
-**If you can´t see a JS file, then, it is inside de HTML.**
+**If you can´t see a JS file, then, it is inside the HTML.**
