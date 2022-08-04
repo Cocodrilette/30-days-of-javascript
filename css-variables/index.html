@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<body>
+    
+    <h2>Update CSS variables with <span class="hl">JS</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" min="0" max="25" value="2" data-sizing="px">
+
+        <label for="base">Color:</label>
+        <input type="color" name="base" value="#ffc600">
+
+        <img src="https://images.unsplash.com/photo-1639262498805-17c7dc422d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+    </div>
+
+
+    <style>
+        :root {
+            --spacing: 10px;
+            --blur: 2px;
+            --base: #ffc600;
+        }
+        img {
+            filter: blur(var(--blur));
+            padding: var(--spacing);
+            background-color: var(--base);
+        }
+        body {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgb(23, 44, 44);
+            color: aliceblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .hl {
+            color: var(--base);
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .controls label {
+            margin-bottom: 10px;
+        }
+        .controls input[type="range"],
+        .controls input[type="color"] {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .controls img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <script>
+        const inputs = document.querySelectorAll('.controls input')
+
+        function handleUpdate(e) {
+            document.documentElement.style.setProperty(`--${e.target.name}`, e.target.dataset.sizing == "px" ? e.target.value + e.target.dataset.sizing : e.target.value)
+        }
+
+        inputs.forEach(input => {
+            addEventListener('change', handleUpdate)
+            addEventListener('mousemove', handleUpdate)
+        })
+
+        // const img = document.querySelector('img');
+        // const spacing = document.querySelector('input[name="spacing"]');
+        // const blur = document.querySelector('input[name="blur"]');
+        // const base = document.querySelector('input[name="base"]');
+
+        // spacing.addEventListener('input', () => {
+        //     document.documentElement.style.setProperty('--spacing', spacing.value + spacing.dataset.sizing);
+        // });
+
+        // blur.addEventListener('input', () => {
+        //     document.documentElement.style.setProperty('--blur', blur.value + blur.dataset.sizing);
+        // });
+
+        // base.addEventListener('input', (e) => {
+        //     document.documentElement.style.setProperty('--base', base.value = e.target.value);
+        // })
+    </script>
+
+</body>
+</html>
