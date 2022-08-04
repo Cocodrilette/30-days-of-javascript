@@ -13,3 +13,6 @@ If you want no know more about each project, I will talking about it in my websi
 ---
 # Day 2: Clock
 ![A beautiful CSS and JS clock](https://i.imgur.com/5lkfpLD.png)
+---
+# Day 3: Update CSS variables with JS
+![](https://i.imgur.com/po27mBE.png)
