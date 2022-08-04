@@ -12,4 +12,4 @@ If you want no know more about each project, I will talking about it in my websi
 ![Project preview](https://i.imgur.com/Lv1w5BQ.png)
 ---
 # Day 2: Clock
-![A beautiful CSS and JS clock](https://i.imgur.com/0NFTOhW.png)
+![A beautiful CSS and JS clock](https://i.imgur.com/5lkfpLD.png)
