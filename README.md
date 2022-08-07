@@ -15,6 +15,10 @@ I will doing one by one, trying to do one per day.
 # Day 3: Update CSS variables with JS
 ![](https://i.imgur.com/po27mBE.png)
 ---
-# Day 4: Array cardio
+# Day 4: Array Cardio
 This challenge don't have any visuals components, only console
 ![](https://i.imgur.com/V1ZiF2F.png)
+--
+# Day 5: Flex Panels Gallery
+![Flex panels gallery preview](https://i.imgur.com/vOIHAAA.jpeg)
+---

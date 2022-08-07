@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Panels</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="panels">
+
+        <div class="panel panel1">
+            <p>Hey</p>
+            <p>Let's</p>
+            <p>It</p>
+        </div>
+        <div class="panel panel2">
+            <p>Let's</p>
+            <p>Do</p>
+            <p>It</p>
+        </div>
+        <div class="panel panel3">
+            <p>Hey</p>
+            <p>It</p>
+            <p>It</p>
+        </div>
+        <div class="panel panel4">
+            <p>Hey</p>
+            <p>Now!</p>
+            <p>It</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        const panels = Array.from(document.querySelectorAll('.panel'));
+
+        function toggleOpen(panel) {
+            if (panel.classList.contains('open' || 'open-active')) {
+                panel.classList.remove('open', 'open-active');
+            } else {
+                panels.map(panel => panel.classList.remove('open', 'open-active'));
+                panel.classList.add('open');
+            }
+        }
+
+        function toggleActive(panel, e) {
+            if (e.propertyName.includes('flex') && panel.classList.contains('open')) {
+                panel.classList.add('open-active');
+            }
+        }
+
+        panels.map(panel => {
+            panel.addEventListener('click', () => toggleOpen(panel));
+            panel.addEventListener('transitionend', (e) => toggleActive(panel, e));
+        });
+        console.log(panels.classList)
+        // panels[1].classList.add('open-active', 'open');
+        console.log(panels);
+
+    </script>
+
+</body>
+
+</html>
