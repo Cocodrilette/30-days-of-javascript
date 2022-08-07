@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Type Ahead</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="formContainer">
+        <form>
+            <input type="text" id="search" placeholder="Search...">
+        </form>
+        <div class="formResults">
+            <ul id="results">
+                <li>
+                    Find by city name
+                </li>
+                <li>
+                    or by state name
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+        const searchInput = document.querySelector('#search');
+        const results = document.querySelector('#results');
+
+        const cities = [];
+
+        fetch(endpoint)
+            .then(response => response.json())
+            .then(data => cities.push(...data));
+
+        function findMatches(wordToMatch, cities) {
+            return cities.filter(place => {
+                const regex = new RegExp(wordToMatch, 'gi');
+                return place.city.match(regex) || place.state.match(regex);
+            })
+        };
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        };
+
+
+        function renderMatches() {
+            const matches = findMatches(searchInput.value, cities);
+            if (matches.length === 0) {
+                results.innerHTML = '<li>No matches found</li>';
+            } else {
+                const html = matches.map(place => {
+                    const regex = new RegExp(searchInput.value, 'gi');
+                    const cityName = place.city.replace(regex, `<span class="hl">${searchInput.value}</span>`);
+                    const stateName = place.state.replace(regex, `<span class="hl">${searchInput.value}</span>`);
+    
+                    return `
+                    <li>
+                        <span class="name">${cityName}, ${stateName}</span>
+                        <span class="population">${numberWithCommas(place.population)}</span>
+                    </li>
+                `;
+                }).join('');
+                results.innerHTML = html;
+            }
+        }
+        searchInput.addEventListener('change', renderMatches);
+        searchInput.addEventListener('keyup', renderMatches);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -41,7 +41,7 @@
         const panels = Array.from(document.querySelectorAll('.panel'));
 
         function toggleOpen(panel) {
-            if (panel.classList.contains('open' || 'open-active')) {
+            if (panel.classList.contains('open')) {
                 panel.classList.remove('open', 'open-active');
             } else {
                 panels.map(panel => panel.classList.remove('open', 'open-active'));
@@ -50,7 +50,8 @@
         }
 
         function toggleActive(panel, e) {
-            if (e.propertyName.includes('flex') && panel.classList.contains('open')) {
+            console.log(e.propertyName)
+            if (panel.classList.contains('open')) {
                 panel.classList.add('open-active');
             }
         }
@@ -59,9 +60,6 @@
             panel.addEventListener('click', () => toggleOpen(panel));
             panel.addEventListener('transitionend', (e) => toggleActive(panel, e));
         });
-        console.log(panels.classList)
-        // panels[1].classList.add('open-active', 'open');
-        console.log(panels);
 
     </script>
 

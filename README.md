@@ -22,3 +22,5 @@ This challenge don't have any visuals components, only console
 # Day 5: Flex Panels Gallery
 ![Flex panels gallery preview](https://i.imgur.com/vOIHAAA.jpeg)
 ---
+# Day 6: Ajax Type Ahead
+![Cities finder preview](https://i.imgur.com/SANudM5.png)
