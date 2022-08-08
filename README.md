@@ -17,10 +17,13 @@ I will doing one by one, trying to do one per day.
 ---
 # Day 4: Array Cardio
 This challenge don't have any visuals components, only console
-![](https://i.imgur.com/V1ZiF2F.png)
+![](https://imgur.com/a/yLKMyr9)
 --
 # Day 5: Flex Panels Gallery
 ![Flex panels gallery preview](https://i.imgur.com/vOIHAAA.jpeg)
 ---
 # Day 6: Ajax Type Ahead
 ![Cities finder preview](https://i.imgur.com/SANudM5.png)
+
+# Day 7: Array Cardio 2
+![](https://imgur.com/mzkMdH4)
