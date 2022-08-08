@@ -17,7 +17,7 @@ I will doing one by one, trying to do one per day.
 ---
 # Day 4: Array Cardio
 This challenge don't have any visuals components, only console
-![](https://imgur.com/a/yLKMyr9)
+![](https://i.imgur.com/bIEJ2fT.png)
 --
 # Day 5: Flex Panels Gallery
 ![Flex panels gallery preview](https://i.imgur.com/vOIHAAA.jpeg)
@@ -26,4 +26,4 @@ This challenge don't have any visuals components, only console
 ![Cities finder preview](https://i.imgur.com/SANudM5.png)
 
 # Day 7: Array Cardio 2
-![](https://imgur.com/mzkMdH4)
+![](https://i.imgur.com/dKQwcQS.png)
