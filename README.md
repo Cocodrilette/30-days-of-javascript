@@ -26,4 +26,4 @@ This challenge don't have any visuals components, only console
 ![Cities finder preview](https://i.imgur.com/SANudM5.png)
 
 # Day 7: Array Cardio 2
-![](https://i.imgur.com/dKQwcQS.png)
+![](https://i.imgur.com/VrzrQPH.png)
