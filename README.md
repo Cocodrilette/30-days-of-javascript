@@ -26,7 +26,10 @@ This challenge don't have any visuals components, only console
 ![Cities finder preview](https://i.imgur.com/SANudM5.png)
 
 # Day 7: Array Cardio 2
+<<<<<<< HEAD
 ![](https://i.imgur.com/dKQwcQS.png)
 
 # Day 8: Playing with HTML Canvas
 ![]('https://i.imgur.com/6z8LXEK.png')
+=======
+![](https://i.imgur.com/VrzrQPH.png)
