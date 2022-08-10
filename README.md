@@ -31,3 +31,6 @@ This challenge don't have any visuals components, only console
 # Day 8: Playing with HTML Canvas
 ![](https://i.imgur.com/6z8LXEK.png)
 ---
+# Day 9: Dev Tools Tricks (console methods)
+![](https://i.imgur.com/0vrPUyU.png)
+![](https://i.imgur.com/W7pAc57.png)
