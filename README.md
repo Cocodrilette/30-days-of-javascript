@@ -44,6 +44,8 @@ This challenge don't have any visuals components, only console
 
 ![](https://i.imgur.com/0vrPUyU.png)
 ![](https://i.imgur.com/W7pAc57.png)
-
 # Day 10: Hold Shift to Check Checkboxes
 ![](./hold-shift-to-check-multiple-checkboxes/Animation.gif)
+
+# Day 11: Custom HTML 5 Videoplayer
+![](./custom-html5-videoplayer/chrome_xn0licus79.gif)
