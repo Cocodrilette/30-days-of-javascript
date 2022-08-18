@@ -49,3 +49,10 @@ This challenge don't have any visuals components, only console
 
 # Day 11: Custom HTML 5 Videoplayer
 ![](./custom-html5-videoplayer/chrome_xn0licus79.gif)
+
+# Day 12: Key Secuence Detection
+![](https://i.imgur.com/iVbEbJ2.png)
+*[See on glitch](https://mint-factual-city.glitch.me)*
+
+# Day 13: Slide in on Scroll
+![](./slideIn-on-scroll/chrome_51LPu186UZ.gif)
